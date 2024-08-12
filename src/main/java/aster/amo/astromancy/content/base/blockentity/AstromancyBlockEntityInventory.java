@@ -1,7 +1,7 @@
-package coffee.amo.astromancy.core.systems.blockentity;
+package aster.amo.astromancy.content.base.blockentity;
 
-import coffee.amo.astromancy.core.helpers.BlockHelper;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionHand;
@@ -11,14 +11,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.ItemHandlerHelper;
-import net.minecraftforge.items.ItemStackHandler;
+import net.neoforged.neoforge.items.IItemHandler;
+import net.neoforged.neoforge.items.ItemHandlerHelper;
+import net.neoforged.neoforge.items.ItemStackHandler;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
@@ -27,7 +27,7 @@ public class AstromancyBlockEntityInventory extends ItemStackHandler {
     public final int slotSize;
     public Predicate<ItemStack> inputPredicate;
     public Predicate<ItemStack> outputPredicate;
-    public final LazyOptional<IItemHandler> inventoryOptional = LazyOptional.of(() -> this);
+    public final Optional<IItemHandler> inventoryOptional = Optional.of(this);
 
     public ArrayList<Item> items = new ArrayList<>();
     public ArrayList<ItemStack> nonEmptyStacks = new ArrayList<>();
@@ -96,12 +96,12 @@ public class AstromancyBlockEntityInventory extends ItemStackHandler {
         firstEmptyItemIndex = getFirstEmptyItemIndex();
     }
 
-    public void load(CompoundTag compound) {
-        load(compound, "inventory");
+    public void load(CompoundTag compound, HolderLookup.Provider provider) {
+        load(compound, "inventory", provider);
     }
 
-    public void load(CompoundTag compound, String name) {
-        deserializeNBT(compound.getCompound(name));
+    public void load(CompoundTag compound, String name, HolderLookup.Provider provider) {
+        deserializeNBT(provider, compound.getCompound(name));
         if (stacks.size() != slotCount) {
             int missing = slotCount - stacks.size();
             for (int i = 0; i < missing; i++) {
@@ -111,12 +111,12 @@ public class AstromancyBlockEntityInventory extends ItemStackHandler {
         updateData();
     }
 
-    public void save(CompoundTag compound) {
-        save(compound, "inventory");
+    public void save(CompoundTag compound, HolderLookup.Provider provider) {
+        save(compound, "inventory", provider);
     }
 
-    public void save(CompoundTag compound, String name) {
-        compound.put(name, serializeNBT());
+    public void save(CompoundTag compound, String name, HolderLookup.Provider provider) {
+        compound.put(name, serializeNBT(provider));
     }
 
     public int getFirstEmptyItemIndex() {
@@ -163,7 +163,7 @@ public class AstromancyBlockEntityInventory extends ItemStackHandler {
     }
 
     public void dumpItems(Level level, BlockPos pos) {
-        dumpItems(level, BlockHelper.fromBlockPos(pos).add(0.5, 0.5, 0.5));
+        dumpItems(level, pos.getCenter().add(0.5, 0.5, 0.5));
     }
 
     public void dumpItems(Level level, Vec3 pos) {

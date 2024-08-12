@@ -1,11 +1,13 @@
-package coffee.amo.astromancy.core.systems.blockentity;
+package aster.amo.astromancy.content.base.blockentity;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.Connection;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.ItemInteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -28,7 +30,7 @@ public class AstromancyBlockEntity extends BlockEntity {
     }
 
     public void onBreak(@Nullable Player player) {
-        invalidateCaps();
+        invalidateCapabilities();
     }
 
     public void onPlace(LivingEntity placer, ItemStack stack) {
@@ -41,8 +43,8 @@ public class AstromancyBlockEntity extends BlockEntity {
         return ItemStack.EMPTY;
     }
 
-    public InteractionResult onUse(Player player, InteractionHand hand) {
-        return InteractionResult.PASS;
+    public ItemInteractionResult onUse(Player player, InteractionHand hand) {
+        return ItemInteractionResult.PASS_TO_DEFAULT_BLOCK_INTERACTION;
     }
 
     public InteractionResult onUse(Player player, InteractionHand hand, BlockHitResult ray){
@@ -54,21 +56,23 @@ public class AstromancyBlockEntity extends BlockEntity {
     }
 
     @Override
-    public CompoundTag getUpdateTag() {
-        return this.saveWithoutMetadata();
+    public CompoundTag getUpdateTag(HolderLookup.Provider provider) {
+        return this.saveWithoutMetadata(provider);
     }
 
+
     @Override
-    public void handleUpdateTag(CompoundTag tag) {
+    public void handleUpdateTag(CompoundTag tag, HolderLookup.Provider provider) {
         if (tag != null) {
-            super.handleUpdateTag(tag);
+            super.handleUpdateTag(tag, provider);
         }
     }
 
+
     @Override
-    public void load(CompoundTag pTag) {
+    public void loadAdditional(CompoundTag pTag, HolderLookup.Provider provider) {
         needsSync = true;
-        super.load(pTag);
+        super.loadAdditional(pTag, provider);
     }
 
     @Override
@@ -77,10 +81,11 @@ public class AstromancyBlockEntity extends BlockEntity {
     }
 
     @Override
-    public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt) {
-        super.onDataPacket(net, pkt);
-        handleUpdateTag(getUpdatePacket().getTag());
+    public void onDataPacket(Connection net, ClientboundBlockEntityDataPacket pkt, HolderLookup.Provider provider) {
+        super.onDataPacket(net, pkt, provider);
+        handleUpdateTag(getUpdatePacket().getTag(), provider);
     }
+
 
     public void tick() {
         if (needsSync) {

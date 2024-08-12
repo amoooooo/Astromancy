@@ -2,7 +2,7 @@ package aster.amo.astromancy.space.classification.matter.glyph
 
 import java.awt.Color
 
-enum class Glyphs(private val symbol: String, private val color: Color) {
+enum class Glyph(private val symbol: String, private val color: Color) {
     EMPTY("", Color(0, 0, 0, 0)),
     CONJUNCTION("a", Color(120, 120, 120, 255)),  // Basic
     OPPOSITION("b", Color(127, 252, 124, 255)),  // Complete
@@ -37,7 +37,7 @@ enum class Glyphs(private val symbol: String, private val color: Color) {
     }
 
     companion object {
-        fun get(type: Int): Glyphs {
+        fun get(type: Int): Glyph {
             return entries[type]
         }
     }
