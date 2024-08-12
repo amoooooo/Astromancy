@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "astromancy:block/star_gateway",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "astromancy:block/star_gateway"
+    },
+    "facing=south": {
+      "model": "astromancy:block/star_gateway",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "astromancy:block/star_gateway",
+      "y": 270
+    }
+  }
+}

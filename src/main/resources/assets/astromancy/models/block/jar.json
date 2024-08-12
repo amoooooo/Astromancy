@@ -1,0 +1,34 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "astromancy:block/jar",
+		"particle": "astromancy:block/jar"
+	},
+	"elements": [
+		{
+			"from": [3, 0, 3],
+			"to": [13, 12, 13],
+			"faces": {
+				"north": {"uv": [0, 5, 5, 11], "texture": "#0"},
+				"east": {"uv": [0, 5, 5, 11], "texture": "#0"},
+				"south": {"uv": [0, 5, 5, 11], "texture": "#0"},
+				"west": {"uv": [0, 5, 5, 11], "texture": "#0"},
+				"up": {"uv": [0, 0, 5, 5], "texture": "#0"},
+				"down": {"uv": [0, 11, 5, 16], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3, 12, 3],
+			"to": [13, 14, 13],
+			"faces": {
+				"north": {"uv": [5, 15, 10, 16], "texture": "#0"},
+				"east": {"uv": [5, 15, 10, 16], "texture": "#0"},
+				"south": {"uv": [5, 15, 10, 16], "texture": "#0"},
+				"west": {"uv": [5, 15, 10, 16], "texture": "#0"},
+				"up": {"uv": [5, 10, 10, 15], "texture": "#0"},
+				"down": {"uv": [5, 10, 10, 15], "texture": "#0"}
+			}
+		}
+	]
+}

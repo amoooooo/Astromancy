@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "astromancy:item/icons/glyph_research_icon"
+    }
+}

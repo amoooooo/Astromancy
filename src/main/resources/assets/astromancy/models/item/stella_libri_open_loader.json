@@ -1,0 +1,15 @@
+{
+  "parent": "item/generated",
+  "loader": "forge:separate-perspective",
+  "base":{
+    "parent": "astromancy:item/stella_libri_open"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "astromancy:item/stella_libri_open_gui"
+    },
+    "fixed": {
+      "parent": "astromancy:item/stella_libri_open_gui"
+    }
+  }
+}

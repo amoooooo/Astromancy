@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "astromancy:item/jar"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "astromancy:jar_fill": 1
+            },
+            "model": "astromancy:item/jar_filled"
+        }
+    ]
+}

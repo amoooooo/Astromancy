@@ -1,0 +1,20 @@
+{
+  "blend": {
+    "func": "add",
+    "srcrgb": "srcalpha",
+    "dstrgb": "1-srcalpha"
+  },
+  "vertex": "astromancy:default",
+  "fragment": "astromancy:night_sky",
+  "attributes": [
+    "Position",
+    "Color",
+    "UV0"
+  ],
+  "samplers": [
+  ],
+  "uniforms": [
+    { "name": "GameTime", "type": "float", "count": 1, "values": [ 0.0 ] },
+    { "name": "InSize", "type": "float", "count": 2,  "values": [ 1.0, 1.0 ] }
+  ]
+}

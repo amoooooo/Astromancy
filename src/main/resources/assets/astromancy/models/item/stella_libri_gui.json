@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "astromancy:item/closed_thick_1"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "astromancy:book_open": 1
+            },
+            "model": "astromancy:item/stella_libri_open_gui"
+        }
+    ]
+}

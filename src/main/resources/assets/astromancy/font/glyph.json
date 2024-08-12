@@ -1,0 +1,28 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "astromancy:font/ascii_glyph.png",
+      "ascent": 7,
+      "chars": [
+        "abcedfghijklmnopqrstuvw"
+      ]
+    },
+    {
+        "type": "bitmap",
+        "file": "astromancy:font/allnumbers.png",
+        "ascent": 7,
+        "chars": [
+            "0123456789"
+        ]
+    },
+    {
+      "type": "bitmap",
+      "file": "astromancy:font/brackets.png",
+      "ascent": 7,
+      "chars": [
+        "[]"
+      ]
+    }
+  ]
+}

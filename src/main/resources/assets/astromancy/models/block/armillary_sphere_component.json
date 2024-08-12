@@ -1,0 +1,121 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"4": "astromancy:block/large_armillary_ring_top",
+		"5": "astromancy:block/large_armillary_ring_bottom",
+		"6": "astromancy:block/large_armillary_ring_side",
+		"7": "astromancy:block/armillary_sphere_ring_and_ball",
+		"8": "astromancy:block/large_armillary_ring_upper_half",
+		"9": "astromancy:block/large_armillary_ring_upper_half_top",
+		"10": "astromancy:block/large_armillary_ring_bottom2",
+		"11": "astromancy:block/large_armillary_ring_inside2",
+		"12": "astromancy:block/large_armillary_ring_side2",
+		"13": "astromancy:block/large_armillary_ring_top2",
+		"particle": "astromancy:block/armillary_sphere_base_top1"
+	},
+	"elements": [
+		{
+			"from": [6, 6, 6],
+			"to": [10, 10, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -16, 0]},
+			"faces": {
+				"north": {"uv": [0, 12, 4, 16], "texture": "#7"},
+				"east": {"uv": [0, 12, 4, 16], "texture": "#7"},
+				"south": {"uv": [0, 12, 4, 16], "texture": "#7"},
+				"west": {"uv": [0, 12, 4, 16], "texture": "#7"},
+				"up": {"uv": [0, 8, 4, 12], "texture": "#7"},
+				"down": {"uv": [0, 4, 4, 8], "texture": "#7"}
+			}
+		},
+		{
+			"from": [0, -0.001, 0],
+			"to": [16, 7.999, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -16, 0]},
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#6"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#6"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#6"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#6"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#5"}
+			}
+		},
+		{
+			"from": [0, 7.999, 0],
+			"to": [16, 15.999, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -16, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 8], "texture": "#8"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#8"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#9"}
+			}
+		},
+		{
+			"from": [0, 7.999, 16],
+			"to": [16, 15.999, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -16, 0]},
+			"faces": {
+				"east": {"uv": [0, 0, 16, 8], "texture": "#8"},
+				"west": {"uv": [0, 0, 16, 8], "texture": "#8"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#9"}
+			}
+		},
+		{
+			"from": [0, -0.001, 16],
+			"to": [16, 7.999, 0],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -16, 0]},
+			"faces": {
+				"north": {"uv": [0, 8, 16, 16], "texture": "#6"},
+				"east": {"uv": [0, 8, 16, 16], "texture": "#6"},
+				"south": {"uv": [0, 8, 16, 16], "texture": "#6"},
+				"west": {"uv": [0, 8, 16, 16], "texture": "#6"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#4"},
+				"down": {"uv": [16, 16, 0, 0], "texture": "#5"}
+			}
+		},
+		{
+			"from": [2.5, 2.5, 8],
+			"to": [13.5, 13.5, 8],
+			"rotation": {"angle": -45, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [5, 5, 16, 16], "texture": "#7"},
+				"east": {"uv": [0, 0, 0, 11], "texture": "#missing"},
+				"south": {"uv": [5, 5, 16, 16], "texture": "#7"},
+				"west": {"uv": [0, 0, 0, 11], "texture": "#missing"},
+				"up": {"uv": [0, 0, 11, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 11, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, -0.1, 7],
+			"to": [16, 15.9, 9],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [7, 0, 9, 16], "texture": "#12"},
+				"west": {"uv": [7, 0, 9, 16], "texture": "#12"},
+				"up": {"uv": [0, 7, 16, 9], "texture": "#13"},
+				"down": {"uv": [0, 7, 16, 9], "texture": "#10"}
+			}
+		},
+		{
+			"from": [0, -0.1, 9],
+			"to": [16, 15.9, 7],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"east": {"uv": [7, 0, 9, 16], "texture": "#12"},
+				"west": {"uv": [7, 0, 9, 16], "texture": "#12"},
+				"up": {"uv": [0, 7, 16, 9], "texture": "#13"},
+				"down": {"uv": [0, 7, 16, 9], "texture": "#10"}
+			}
+		},
+		{
+			"from": [0, -0.1, 8],
+			"to": [16, 15.9, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#11"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#11"}
+			}
+		}
+	]
+}

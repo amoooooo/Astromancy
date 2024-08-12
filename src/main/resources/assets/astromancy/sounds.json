@@ -1,0 +1,220 @@
+{
+    "write":{
+        "sounds": [
+            {
+                "name": "astromancy:research/write1",
+                "weight": 1,
+                "stream": true
+            },
+            {
+                "name": "astromancy:research/write2",
+                "weight": 1,
+                "stream": true
+            }
+        ]
+    },
+    "jar_place":{
+        "sounds": [
+            {
+                "name": "astromancy:blocks/jar_place",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1
+            },
+            {
+                "name": "astromancy:blocks/jar_place",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.7
+            },
+            {
+                "name": "astromancy:blocks/jar_place",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.2
+            },
+            {
+                "name": "astromancy:blocks/jar_place",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.05
+            },
+            {
+                "name": "astromancy:blocks/jar_place",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.85
+            }
+        ]
+    },
+    "jar_break":{
+        "sounds": [
+            {
+                "name": "astromancy:blocks/jar_break",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1
+            },
+            {
+                "name": "astromancy:blocks/jar_break",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.7
+            },
+            {
+                "name": "astromancy:blocks/jar_break",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.2
+            },
+            {
+                "name": "astromancy:blocks/jar_break",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.05
+            },
+            {
+                "name": "astromancy:blocks/jar_break",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.85
+            }
+        ]
+    },
+    "jar_hit":{
+        "sounds": [
+            {
+                "name": "astromancy:blocks/jar_hit",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1
+            },
+            {
+                "name": "astromancy:blocks/jar_hit",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.7
+            },
+            {
+                "name": "astromancy:blocks/jar_hit",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.2
+            },
+            {
+                "name": "astromancy:blocks/jar_hit",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.05
+            },
+            {
+                "name": "astromancy:blocks/jar_hit",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.85
+            }
+        ]
+    },
+    "empty_jar":{
+        "sounds": [
+            {
+                "name": "astromancy:blocks/empty_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1
+            },
+            {
+                "name": "astromancy:blocks/empty_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.7
+            },
+            {
+                "name": "astromancy:blocks/empty_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.2
+            },
+            {
+                "name": "astromancy:blocks/empty_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.05
+            },
+            {
+                "name": "astromancy:blocks/empty_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.85
+            }
+        ]
+    },
+    "fill_jar":{
+        "sounds": [
+            {
+                "name": "astromancy:blocks/fill_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1
+            },
+            {
+                "name": "astromancy:blocks/fill_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.7
+            },
+            {
+                "name": "astromancy:blocks/fill_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.2
+            },
+            {
+                "name": "astromancy:blocks/fill_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 1.05
+            },
+            {
+                "name": "astromancy:blocks/fill_jar",
+                "weight": 1,
+                "stream": true,
+                "pitch": 0.85
+            }
+        ]
+    },
+    "grind": {
+        "sounds": [
+            {
+                "name": "astromancy:blocks/grind",
+                "weight": 1,
+                "pitch": 1,
+                "stream": true
+            },
+            {
+                "name": "astromancy:blocks/grind",
+                "weight": 1,
+                "pitch": 0.7,
+                "stream": true
+            },
+            {
+                "name": "astromancy:blocks/grind",
+                "weight": 1,
+                "pitch": 1.2,
+                "stream": true
+            },
+            {
+                "name": "astromancy:blocks/grind",
+                "weight": 1,
+                "pitch": 0.85,
+                "stream": true
+            },
+            {
+                "name": "astromancy:blocks/grind",
+                "weight": 1,
+                "pitch": 1.1,
+                "stream": true
+            }
+        ]
+    }
+}

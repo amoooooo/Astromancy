@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "astromancy:item/phial_filled_base",
+        "layer1": "astromancy:item/phial_filled_overlay"
+    }
+}

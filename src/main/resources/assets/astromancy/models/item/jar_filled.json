@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "astromancy:item/full_jar",
+        "layer1": "astromancy:item/full_jar_inner"
+    }
+}

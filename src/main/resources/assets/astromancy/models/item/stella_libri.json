@@ -1,0 +1,23 @@
+{
+    "parent": "item/generated",
+    "loader": "forge:separate-perspective",
+    "base":{
+        "parent": "astromancy:item/stella_libri_closed"
+    },
+    "perspectives": {
+        "gui": {
+            "parent": "astromancy:item/stella_libri_gui"
+        },
+        "fixed": {
+            "parent": "astromancy:item/stella_libri_gui"
+        }
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "astromancy:book_open": 1
+            },
+            "model": "astromancy:item/stella_libri_open_loader"
+        }
+    ]
+}
